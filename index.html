@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="weather-card">
+    <h1>Weather App</h1>
+    <p class="subtitle">Check current weather by city</p>
+
+    <form id="search-form">
+      <label class="sr-only" for="city-input">City name</label>
+      <input id="city-input" type="text" placeholder="Enter city (e.g., Hyderabad)" required>
+      <button type="submit">Search</button>
+    </form>
+
+    <p id="message" role="status" aria-live="polite"></p>
+    <section id="weather" class="weather-result" hidden>
+      <h2 id="city-name"></h2>
+      <p id="temperature" class="temperature"></p>
+      <p id="description"></p>
+      <p id="details"></p>
+    </section>
+    <p class="note">Demo uses the Open-Meteo public weather API.</p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
